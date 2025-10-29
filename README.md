@@ -1,4 +1,4 @@
-# WDProjCesiumDinTejada
+# WDProjCesiumDinTejada Project Proposal
 
 ## Website Title: Football Made Easy
 
