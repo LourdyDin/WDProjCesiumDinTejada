@@ -5,9 +5,9 @@
 ## Second Title: A Thorough Guide to Football(Soccer)
 
 ## Logo
+![Football Made Easy Logo](assets/Football%20Design.png)
 
-
-## Description: Football Made Easy is a informative website that gives the fundamentals of football. With short and clear explanations, it breaks down the complex aspects of the game such as history, player positions, rules, and Teams . The website offers a clean layout and interactive features that makes the learning both easy and enjoyable. Football Made Easy is a reliable and engaging starting point on your journey into the world of football
+## Description: Football Made Easy is a informative website that gives the fundamentals of football(Soccer). With short and clear explanations, it breaks down the complex aspects of the game such as history, player positions, rules, and Teams . The website offers a clean layout and interactive features that makes the learning both easy and enjoyable. Football Made Easy is a reliable and engaging starting point on your journey into the world of football
 
 ## Outline
 ## Home Page: This page will introduce the purpose of the website. It will include a welcome message and a brief overview of the site's content.
@@ -27,4 +27,7 @@
 
 ## JS Implementation: JS will be used for a hover effect on the Teams page
 
-## WireFrame:
+## WireFrame: The link below will show the wireframe
+
+[WireFrame](https://www.canva.com/design/DAG3JS9YjUk/QJS5RCpke-uu9xRRpOGCAw/edit)
+
