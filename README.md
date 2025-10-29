@@ -25,7 +25,7 @@
 ## Sources: This page will include all of the resources that we used to make this website
 
 
-## JS Implementation: JS will be used for a hover effect on the History and Teams page. It will make the text expand when the mouse hovers over it.
+## JS ImplementSation: Javascript will be implemented on the positions page as hovering your cursor over any of the football position will result in a pop-up that gives the positions name and a description of what it does.
 
 ## WireFrame: The link below will show the wireframe
 
