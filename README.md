@@ -25,7 +25,7 @@
 ## Sources: This page will include all of the resources that we used to make this website
 
 
-## JS Implementation: JS will be used for a hover effect on the Teams page
+## JS Implementation: JS will be used for a hover effect on the History and Teams page to make it easier to read.
 
 ## WireFrame: The link below will show the wireframe
 
