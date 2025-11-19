@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Football Made Easy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: lightblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .left-section img {
+      width: 40px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    main {
+      background-color: green;
+      height: 400px; /* idk if dis right */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+    }
+
+    footer {
+      background-color: lightblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top -->
+  <header>
+    <div class="left-section">
+      <img src="../assets/logo.png" alt="Football Logo">
+      <a href="#">Sources</a>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">History</a>
+      <a href="#">Positions</a>
+      <a href="#">Rules</a>
+      <a href="#">Teams</a>
+      <a href="#">About Us</a>
+    </nav>
+  </header>
+
+  <!-- put the content here -->
+  <main>
+    Football Field Content
+  </main>
+
+  <footer>
+    <div class="social">
+      <img src="../assets/fb.png" alt="Facebook">
+      <img src="../assets/twitter.png" alt="Twitter/X">
+    </div>
+    <div class="social" style="position:absolute; right:20px; bottom:10px;">
+      <img src="../assets/instagram.png" alt="Instagram">
+    </div>
+    <div class="copyright">
+      © 2025 Football Made Easy. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
