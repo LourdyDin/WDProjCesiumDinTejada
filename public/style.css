@@ -49,11 +49,12 @@ nav a {
 }
 
 main {
-  background-color: green;
+  background-color: rgba(0, 224, 11, 0.555);
   min-height: 1000px;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: auto;
   color: white;
   font-size: 1.5em;
   padding: 20px;
@@ -101,3 +102,5 @@ figcaption {
   right: 20px;
   font-size: 0.9em;
 }
+
+
