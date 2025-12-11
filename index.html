@@ -8,33 +8,194 @@
   <link rel="icon" type="image/png" href="../assets/Football Design.png">
   <link rel="stylesheet" href="./public/style.css">
 </head>
+
 <body>
 
   <!-- Top -->
   <header>
-  <nav class="nav-left">
-    <a href="index.html">Home</a>
-  </nav>
+    <nav class="nav-left">
+      <a href="index.html">Home</a>
+    </nav>
 
-  <nav class="nav-center">
-    <a href="./public/history.html">History</a>
-    <a href="./public/positions.html">Positions</a>
-    <a href="./public/rules.html">Rules</a>
-    <a href="./public/teams.html">Teams</a>
-    <a href="./public/aboutus.html">About Us</a>
-  </nav>
+    <nav class="nav-center">
+      <a href="./public/history.html">History</a>
+      <a href="./public/positions.html">Positions</a>
+      <a href="./public/rules.html">Rules</a>
+      <a href="./public/teams.html">Teams</a>
+      <a href="./public/aboutus.html">About Us</a>
+    </nav>
 
-<nav class="right-section">
-  <a href="./public/sources.html">Sources</a>
-  <img src="../assets/Football Design.png" alt="Football Logo">
-</nav>
-</header>
-
+    <nav class="right-section">
+      <a href="./public/sources.html">Sources</a>
+      <img src="../assets/Football Design.png" alt="Football Logo">
+    </nav>
+  </header>
 
   <!-- Main content -->
   <main>
-    <div style = "font-size: 40px;">Football Made Easy</div>
-  </main>
+  <div class="center-title">
+    <img src="../assets/boy_kick.png" alt="Football Icon" class="title-image">
+    <h1>Football Made Easy</h1>
+    <img src="../assets/Football Design.png" alt="Football Icon" class="title-image">
+    <h2>A (Thorough) Guide to Football</h2>
+  </div>
+
+  
+
+</main>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Website Example</title>
+  <style>
+
+    .center-title .title-image {
+      width: 40px;          /* adjust size */
+      height: auto;         /* keep proportions */
+      vertical-align: middle;
+      margin-right: 10px;   /* space between image and text */
+    }
+    .center-title h1 {
+      display: inline-block; /* allow side-by-side with image */
+      font-size: 32px;
+      margin: 0;
+      color: black;
+    }
+
+        /* Title + subtitle positioned between rectangles */
+    .center-title {
+      position: absolute;
+      top: 80px;              /* halfway between top and bottom rectangles */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 600px;            /* control width */
+    }
+
+    .center-title h1 {
+      font-size: 32px;
+      margin: 0;
+      color: black;
+    }
+
+    .center-title h2 {
+      font-size: 22px;
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .rounded-rectangle {
+      position: absolute;       /* places it in the upper left */
+      top: 150px;                /* distance from the top */
+      left: 40px;               /* distance from the left */
+      width: 400px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle2 {
+      position: absolute;       /* places it in the upper left */
+      top: 450px;                /* distance from the top */
+      left: 40px;               /* distance from the left */
+      width: 400px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle2 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle3 {
+      position: absolute;       /* places it in the upper left */
+      top: 150px;                /* distance from the top */
+      left:850px;               /* distance from the left */
+      width: 400px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle3 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle4 {
+      position: absolute;       /* places it in the upper left */
+      top: 450px;                /* distance from the top */
+      left: 850px;               /* distance from the left */
+      width: 400px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle4 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="rounded-rectangle">
+    <h2>Purpose of Website</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="rounded-rectangle2">
+    <h2>What is Football?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="rounded-rectangle3">
+    <h2>How to Get</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    <div class="rounded-rectangle4">
+    <h2>Purpose of Website</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+</body>
+
+
 
   <!-- Footer -->
   <footer>
