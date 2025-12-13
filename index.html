@@ -120,7 +120,7 @@
     .rounded-rectangle3 {
       position: absolute;       /* places it in the upper left */
       top: 150px;                /* distance from the top */
-      left:850px;               /* distance from the left */
+      left:1040px;               /* distance from the left */
       width: 400px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
@@ -136,7 +136,7 @@
     .rounded-rectangle4 {
       position: absolute;       /* places it in the upper left */
       top: 450px;                /* distance from the top */
-      left: 850px;               /* distance from the left */
+      left: 1040px;               /* distance from the left */
       width: 400px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
@@ -149,10 +149,29 @@
       font-size: 18px;
       text-align: center;
     }
+
+    .grow {
+      height: 30px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border: 1px solid #aaa;
+      padding: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      opacity: 0.4;
+    }
+    .grow:hover {
+      height: auto;
+      white-space: normal;
+      transform: scale(1.1);
+      opacity: 1;
+
+    }
   </style>
 </head>
 <body>
-  <div class="rounded-rectangle">
+  <div class="rounded-rectangle grow">
     <h2>Purpose of Website</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -162,7 +181,7 @@ reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="rounded-rectangle2">
+  <div class="rounded-rectangle2 grow">
     <h2>What is Football?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -172,7 +191,7 @@ reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="rounded-rectangle3">
+  <div class="rounded-rectangle3 grow">
     <h2>How to Get</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -182,7 +201,7 @@ reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-    <div class="rounded-rectangle4">
+    <div class="rounded-rectangle4 grow">
     <h2>Purpose of Website</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
