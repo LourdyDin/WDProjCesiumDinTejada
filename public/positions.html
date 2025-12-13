@@ -32,28 +32,39 @@
 
 
   <!-- Main content -->
-  <main>
-    <img id="mainImage" src="image1.jpg" width="300">
+  <main style="display: flex; justify-content: flex-start; align-items: flex-start;  border: 2px solid red;">
+<div style="display: flex; flex-direction: column; align-items: center; width: fit-content; border: 2px solid red;">
+    <h2 id="imageTitle">4-3-3 Formation</h2>
+    <img id="mainImage"
+         src="../assets/formation-4-2-4.jpg"
+    style="margin: 30px; margin-top: 5px; padding: 0; max-width: 100%; height: auto; display: block;">
+</div>
 
-<div style = "display: flex; flex-direction: column"> <button data-img="image1.jpg">Image 1</button>
-<button data-img="image2.jpg">Image 2</button>
-<button data-img="image3.jpg">Image 3</button> </div>
+<div style = "display: flex; flex-direction: column; align-items: flex-end; margin-right: 200px">
+  <button data-img="../assets/formation-4-3-3.jpg" data-title="4-3-3 Formation">4-3-3</button>
+  <button data-img="../assets/formation-4-2-4.jpg" data-title="4-2-4 Formation">4-2-4</button>
+  <button data-img="../assets/formation-5-3-2.jpg" data-title="5-3-2 Formation">5-3-2</button>
+</div>
+
+<div style = "display: flex; flex-direction: column; align-items: flex-end; margin-right: 200px">
+  <button data-img="../assets/formation-4-3-3.jpg" data-title="4-3-3 Formation">4-3-3</button>
+  <button data-img="../assets/formation-4-2-4.jpg" data-title="4-2-4 Formation">4-2-4</button>
+  <button data-img="../assets/formation-5-3-2.jpg" data-title="5-3-2 Formation">5-3-2</button>
+</div>
 
 <script>
   const mainImage = document.getElementById("mainImage");
+  const imageTitle = document.getElementById("imageTitle");
   const buttons = document.querySelectorAll("button");
 
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       mainImage.src = btn.dataset.img;
+      imageTitle.textContent = btn.dataset.title;
     });
   });
 </script>
 
-    <section>
-      <p>Something</p>
-      <p>Something</p>
-    </section>
   </main>
 
   <!-- Footer -->
