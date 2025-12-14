@@ -7,35 +7,121 @@
   <meta name="description" content="Football Made Easy - Learn football rules, history, and positions.">
   <link rel="icon" type="image/png" href="../assets/Football Design.png">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    
+    main {
+      background-color: rgba(0, 224, 11, 0.2);
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .about-us-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* two columns */
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .box {
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      border: 2px solid #333;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      max-height: 120px; /* collapsed height */
+      cursor: pointer;
+      color: black; /* font color */
+      opacity: 70%;
+      transition: transform 0.3s ease;
+    }
+
+    .box h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      text-align: center;
+      color: #222; /* darker heading */
+    }
+
+    .box p{
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4em;
+      color: #333; /* darker paragraph text */
+    }
+
+    .box:hover {
+      max-height: 500px; /* expands vertically */
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+  </style>
 </head>
 <body>
 
   <!-- Top -->
   <header>
-  <nav class="nav-left">
-    <a href="../index.html">Home</a>
-  </nav>
+    <nav class="nav-left">
+      <a href="../index.html">Home</a>
+    </nav>
 
-  <nav class="nav-center">
-    <a href="history.html">History</a>
-    <a href="positions.html">Positions</a>
-    <a href="rules.html">Rules</a>
-    <a href="teams.html">Teams</a>
-    <a href="aboutus.html">About Us</a>
-  </nav>
+    <nav class="nav-center">
+      <a href="history.html">History</a>
+      <a href="positions.html">Positions</a>
+      <a href="rules.html">Rules</a>
+      <a href="teams.html">Teams</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
 
-<nav class="right-section">
-  <a href="sources.html">Sources</a>
-  <img src="../assets/Football Design.png" alt="Football Logo">
-</nav>
-</header>
-
+    <nav class="right-section">
+      <a href="sources.html">Sources</a>
+      <img src="../assets/Football Design.png" alt="Football Logo">
+    </nav>
+  </header>
 
   <!-- Main content -->
   <main>
-    <section>
-      <p>Something</p>
-      <p>Something</p>
+    <section class="about-us-section" style = " display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 12.5%">
+      <div class="box">
+        <h2>Europe</h2>
+        <p>Real Madrid – 15 UEFA Champions League titles, multiple La Liga championships.  
+    FC Barcelona – 5 UEFA Champions League titles, numerous La Liga titles, famous for tiki-taka style.  
+    Bayern Munich – 6 UEFA Champions League titles, over 30 Bundesliga titles, treble in 2013.</p>
+      </div>
+
+      <div class="box">
+        <h2>America</h2>
+        <p>River Plate – 4 Copa Libertadores titles, 38 Argentine league championships.  
+    Flamengo – 3 Copa Libertadores titles, 8 Brazilian Serie A championships.  
+    Club América – 13 Liga MX titles, 7 CONCACAF Champions League titles.</p>
+      </div>
+
+      <div class="box">
+        <h2>Africa</h2>
+        <p>Al Ahly – 11 CAF Champions League titles, over 40 Egyptian league titles.  
+    TP Mazembe – 5 CAF Champions League titles, FIFA Club World Cup finalist in 2010.  
+    Mamelodi Sundowns – 1 CAF Champions League title, multiple South African Premier Division titles.</p>
+      </div>
+
+      <div class="box">
+        <h2>Asia</h2>
+        <p>Al Hilal – 4 AFC Champions League titles, 18 Saudi Pro League titles.  
+    Persepolis – 15 Persian Gulf Pro League titles, 2-time AFC Champions League finalists.  
+    Kashima Antlers – 8 J-League titles, 1 AFC Champions League title.</p>
+      </div>
+
+
     </section>
   </main>
 
@@ -65,4 +151,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
