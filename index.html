@@ -7,46 +7,7 @@
   <meta name="description" content="Football Made Easy - Learn football rules, history, and positions.">
   <link rel="icon" type="image/png" href="../assets/Football Design.png">
   <link rel="stylesheet" href="./public/style.css">
-</head>
 
-<body>
-
-  <!-- Top -->
-  <header>
-    <nav class="nav-left">
-      <a href="index.html">Home</a>
-    </nav>
-
-    <nav class="nav-center">
-      <a href="./public/history.html">History</a>
-      <a href="./public/positions.html">Positions</a>
-      <a href="./public/rules.html">Rules</a>
-      <a href="./public/teams.html">Teams</a>
-      <a href="./public/aboutus.html">About Us</a>
-    </nav>
-
-    <nav class="right-section">
-      <a href="./public/sources.html">Sources</a>
-      <img src="../assets/Football Design.png" alt="Football Logo">
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main>
-  <div class="center-title">
-    <img src="../assets/boy_kick.png" alt="Football Icon" class="title-image">
-    <h1>Football Made Easy</h1>
-    <img src="../assets/Football Design.png" alt="Football Icon" class="title-image">
-    <h2>A (Thorough) Guide to Football</h2>
-  </div>
-
-  
-
-</main>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Website Example</title>
   <style>
 
     .center-title .title-image {
@@ -65,7 +26,9 @@
         /* Title + subtitle positioned between rectangles */
     .center-title {
       position: absolute;
-      top: 80px;              /* halfway between top and bottom rectangles */
+      background-color: rgb(220, 255, 220);
+      opacity: 70%;
+      top: 76px;              /* halfway between top and bottom rectangles */
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
@@ -88,8 +51,8 @@
     .rounded-rectangle {
       position: absolute;       /* places it in the upper left */
       top: 150px;                /* distance from the top */
-      left: 40px;               /* distance from the left */
-      width: 400px;             /* rectangle width */
+      left: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
       border-radius: 15px;      /* rounded corners */
@@ -104,8 +67,8 @@
     .rounded-rectangle2 {
       position: absolute;       /* places it in the upper left */
       top: 450px;                /* distance from the top */
-      left: 40px;               /* distance from the left */
-      width: 400px;             /* rectangle width */
+      left: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
       border-radius: 15px;      /* rounded corners */
@@ -120,8 +83,8 @@
     .rounded-rectangle3 {
       position: absolute;       /* places it in the upper left */
       top: 150px;                /* distance from the top */
-      left:1040px;               /* distance from the left */
-      width: 400px;             /* rectangle width */
+      right:60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
       border-radius: 15px;      /* rounded corners */
@@ -136,8 +99,8 @@
     .rounded-rectangle4 {
       position: absolute;       /* places it in the upper left */
       top: 450px;                /* distance from the top */
-      left: 1040px;               /* distance from the left */
-      width: 400px;             /* rectangle width */
+      right: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
       border-radius: 15px;      /* rounded corners */
@@ -166,11 +129,56 @@
       white-space: normal;
       transform: scale(1.1);
       opacity: 1;
-
     }
+
+    .rounded-rectangle,
+  .rounded-rectangle2,
+  .rounded-rectangle3,
+  .rounded-rectangle4 {
+  overflow-x: hidden;
+}
+
   </style>
 </head>
-<body>
+
+<body style = "background-image: url('../assets/Football-Background.jpg'); 
+              background-size: cover;
+              background-repeat: no-repeat;
+              min-height: 900px;
+              height: auto;
+              position: relative;
+              overflow-x: hidden;">
+
+  <!-- Top -->
+  <header>
+    <nav class="nav-left">
+      <a href="index.html">Home</a>
+    </nav>
+
+    <nav class="nav-center">
+      <a href="./public/history.html">History</a>
+      <a href="./public/positions.html">Positions</a>
+      <a href="./public/rules.html">Rules</a>
+      <a href="./public/teams.html">Teams</a>
+      <a href="./public/aboutus.html">About Us</a>
+    </nav>
+
+    <nav class="right-section">
+      <a href="./public/sources.html">Sources</a>
+      <img src="../assets/Football Design.png" alt="Football Logo">
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main style = "background: none !important">
+  <div class="center-title">
+    <img src="../assets/boy_kick.png" alt="Football Icon" class="title-image">
+    <h1 style = "color: lightgreen;">Football Made Easy</h1>
+    <img src="../assets/Football Design.png" alt="Football Icon" class="title-image">
+    <h2>A (Thorough) Guide to Football</h2>
+  </div>
+</main>
+
   <div class="rounded-rectangle grow">
     <h2>Purpose of Website</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -212,12 +220,8 @@ pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-</body>
-
-
-
   <!-- Footer -->
-  <footer>
+  <footer style = "position: absolute; bottom: 0; width: 100%">
     <div class="social">
       <figure>
         <img src="../assets/facebook-logo.png" alt="Facebook">
