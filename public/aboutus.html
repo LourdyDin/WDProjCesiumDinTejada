@@ -6,67 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Football Made Easy - Learn football rules, history, and positions.">
   <link rel="icon" type="image/png" href="../assets/Football Design.png">
+  <link rel="stylesheet" href="style.css">
 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: lightblue;
-      opacity: 70%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    .nav-left {
-      display: flex;
-      justify-content: left;
-    }
-
-    .nav-center {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex: 1;
-    }
-
-    .right-section {
-      display: flex;
-      align-items: center;
-      justify-content: right;
-      gap: 15px;
-    }
-
-    .right-section img {
-      width: 40px;
-      height: auto;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      font-size: 16px;
-      transition: font-size 0.2s;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-      color: rgba(0, 173, 9, 0.6);
-      font-size: 20px;
-    }
-
+    
     main {
       background-color: rgba(0, 224, 11, 0.2);
       min-height: 600px;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
       padding: 40px;
     }
 
@@ -89,6 +39,8 @@
       max-height: 120px; /* collapsed height */
       cursor: pointer;
       color: black; /* font color */
+      opacity: 70%;
+      transition: transform 0.3s ease;
     }
 
     .box h2 {
@@ -98,7 +50,7 @@
       color: #222; /* darker heading */
     }
 
-    .box p {
+    .box p{
       margin: 0;
       font-size: 14px;
       line-height: 1.4em;
@@ -107,55 +59,10 @@
 
     .box:hover {
       max-height: 500px; /* expands vertically */
-      transform: scale(1.03);
+      transform: scale(1.1);
       opacity: 1;
     }
 
-    footer {
-      background-color: lightblue;
-      opacity: 70%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 10px 20px;
-      flex-wrap: wrap;
-      box-sizing: border-box;
-      width: 100%;
-      overflow-x: hidden;
-    }
-
-    .social {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .social img {
-      width: 24px;
-      height: 24px;
-    }
-
-    figure {
-      margin: 0;
-      text-align: center;
-    }
-
-    figcaption {
-      font-size: 0.8em;
-      color: #333;
-    }
-
-    .copyright {
-      font-size: 0.9em;
-      margin-top: 10px;
-    }
-
-    /* Responsive: stack vertically on smaller screens */
-    @media (max-width: 768px) {
-      .about-us-section {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 <body>
@@ -182,7 +89,10 @@
 
   <!-- Main content -->
   <main>
-    <section class="about-us-section">
+    <section class="about-us-section" style = " display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 12.5%">
       <div class="box">
         <h2>Purpose of Website</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
@@ -217,7 +127,7 @@
         <figcaption>Follow us on Twitter</figcaption>
       </figure>
     </div>
-    <div class="social social-bottom-right">
+    <div class="social">
       <figure>
         <img src="../assets/Instagram-Logo.png" alt="Instagram">
         <figcaption>Follow us on Instagram</figcaption>
