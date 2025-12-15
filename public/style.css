@@ -5,8 +5,7 @@ body {
 }
 
 header {
-  background-color: lightblue;
-  opacity: 70%;
+  background-color: rgb(85, 107, 47);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +59,7 @@ nav a:hover {
 
 main {
   flex: 1; /* required for sticky footer */
-  background-color: rgba(0, 224, 11, 0.555);
+  background-color: rgb(198, 216, 112);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -72,7 +71,7 @@ main {
 
 
 footer {
-  background-color: lightblue;
+  background-color: rgb(239, 245, 210);
   opacity: 70%;
   display: flex;
   justify-content: space-between;
@@ -156,9 +155,192 @@ body {
 
 .formations-main {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
   flex: 1; /* THIS is what makes the sticky footer work */
 }
 
+#mainImage {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#mainImage.zoom-in {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* index and history */
+.center-title .title-image {
+      width: 40px;          /* adjust size */
+      height: auto;         /* keep proportions */
+      vertical-align: middle;
+      margin-right: 10px;   /* space between image and text */
+    }
+    .center-title h1 {
+      display: inline-block; /* allow side-by-side with image */
+      font-size: 32px;
+      margin: 0;
+      color: black;
+    }
+
+        /* Title + subtitle positioned between rectangles */
+    .center-title {
+      position: absolute;
+      background-color: rgb(220, 255, 220);
+      opacity: 70%;
+      top: 76px;              /* halfway between top and bottom rectangles */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 600px;            /* control width */
+    }
+
+    .center-title h1 {
+      font-size: 32px;
+      margin: 0;
+      color: black;
+    }
+
+    .center-title h2 {
+      font-size: 22px;
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .rounded-rectangle {
+      position: absolute;       /* places it in the upper left */
+      top: 150px;                /* distance from the top */
+      left: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle2 {
+      position: absolute;       /* places it in the upper left */
+      top: 450px;                /* distance from the top */
+      left: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle2 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle3 {
+      position: absolute;       /* places it in the upper left */
+      top: 150px;                /* distance from the top */
+      right:60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle3 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle4 {
+      position: absolute;       /* places it in the upper left */
+      top: 450px;                /* distance from the top */
+      right: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle4 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .grow {
+      height: 30px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border: 1px solid #aaa;
+      padding: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      opacity: 0.4;
+    }
+    .grow:hover {
+      height: auto;
+      white-space: normal;
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .rounded-rectangle,
+  .rounded-rectangle2,
+  .rounded-rectangle3,
+  .rounded-rectangle4 {
+  overflow-x: hidden;
+}
+
+/* teams and about us */
+.about-us-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* two columns */
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .box {
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      border: 2px solid #333;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      max-height: 120px; /* collapsed height */
+      cursor: pointer;
+      color: black; /* font color */
+      opacity: 70%;
+      transition: transform 0.3s ease;
+    }
+
+    .box h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      text-align: center;
+      color: #222; /* darker heading */
+    }
+
+    .box p{
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4em;
+      color: #333; /* darker paragraph text */
+    }
+
+    .box:hover {
+      max-height: 500px; /* expands vertically */
+      transform: scale(1.1);
+      opacity: 1;
+    }

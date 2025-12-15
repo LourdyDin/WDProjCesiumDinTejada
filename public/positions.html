@@ -37,10 +37,10 @@
   <div style="display: flex; flex-direction: column; align-items: center;  border: 4px solid rgb(0, 0, 0) ;
   background: rgba(255,0,0,0.2);
 ">
-    <h2 id="imageTitle" style="width: 90%; text-align: center; margin: 0 0 10px 0;">4-3-3 Formation</h2>
+    <h2 id="imageTitle" style="width: 90%; text-align: center; margin-top: 10px; margin-bottom: 10px; color: rgb(0, 249, 0);">Select a Formation:</h2>
 
     <img id="mainImage"
-         src="../assets/formation-4-2-4.jpg"
+         src=""
          style="width: 90%; height: auto; display: block; border: 10px solid rgb(0, 128, 17);">
   </div>
 
@@ -52,9 +52,21 @@
   align-items: flex-start;
   text-align: center;
 ">
-  <h3> Attacking Formations</h3>
+  <h3>Attacking Formations</h3>
   <button data-img="../assets/formation-4-3-3.jpg" data-title="4-3-3 Formation">4-3-3</button>
   <button data-img="../assets/formation-4-2-4.jpg" data-title="4-2-4 Formation">4-2-4</button>
+  <button data-img="../assets/formation-3-4-3.jpg" data-title="3-4-3 Formation">3-4-3</button>
+</div>
+
+<div style="
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+">
+  <h3>Defensive Formations</h3>
+  <button data-img="../assets/formation-3-5-1-1.jpg" data-title="3-5-1-1 Formation">3-5-1-1</button>
+  <button data-img="../assets/formation-4-5-1.jpg" data-title="4-5-1 Formation">4-5-1</button>
   <button data-img="../assets/formation-5-3-2.jpg" data-title="5-3-2 Formation">5-3-2</button>
 </div>
 
@@ -64,45 +76,14 @@
   align-items: flex-start;
   text-align: center;
 ">
-  <h3> Attacking Formations</h3>
-  <button data-img="../assets/formation-4-3-3.jpg" data-title="4-3-3 Formation">4-3-3</button>
-  <button data-img="../assets/formation-4-2-4.jpg" data-title="4-2-4 Formation">4-2-4</button>
-  <button data-img="../assets/formation-5-3-2.jpg" data-title="5-3-2 Formation">5-3-2</button>
-</div>
-
-<div style="
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
-">
-  <h3> Attacking Formations</h3>
-  <button data-img="../assets/formation-4-3-3.jpg" data-title="4-3-3 Formation">4-3-3</button>
-  <button data-img="../assets/formation-4-2-4.jpg" data-title="4-2-4 Formation">4-2-4</button>
-  <button data-img="../assets/formation-5-3-2.jpg" data-title="5-3-2 Formation">5-3-2</button>
+  <h3>Balanced Formations</h3>
+  <button data-img="../assets/formation-3-1-4-2.jpg" data-title="3-1-4-2 Formation">3-1-4-2</button>
+  <button data-img="../assets/formation-4-4-2.jpg" data-title="4-4-2 Formation">4-4-2</button>
+  <button data-img="../assets/formation-4-2-3-1.jpg" data-title="4-2-3-1 Formation">4-2-3-1</button>
 </div>
 
 </div>
-<script>
-  const mainImage = document.getElementById("mainImage");
-  const imageTitle = document.getElementById("imageTitle");
-  const buttons = document.querySelectorAll("button");
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      mainImage.src = btn.dataset.img;
-      imageTitle.textContent = btn.dataset.title;
-      
-      // Remove highlight from all buttons
-      buttons.forEach(b => b.classList.remove("active"));
-
-      // Highlight the clicked button
-      btn.classList.add("active");
-
-    });
-  });
-  
-</script>
 
   </main>
 
