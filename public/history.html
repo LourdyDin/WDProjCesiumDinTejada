@@ -6,109 +6,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Football Made Easy - Learn football rules, history, and positions.">
   <link rel="icon" type="image/png" href="../assets/Football Design.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <link rel="stylesheet" href="./public/style.css">
 
-  <!-- Top -->
-  <header>
-  <nav class="nav-left">
-    <a href="../index.html">Home</a>
-  </nav>
-
-  <nav class="nav-center">
-    <a href="history.html">History</a>
-    <a href="positions.html">Positions</a>
-    <a href="rules.html">Rules</a>
-    <a href="teams.html">Teams</a>
-    <a href="aboutus.html">About Us</a>
-  </nav>
-
-<nav class="right-section">
-  <a href="sources.html">Sources</a>
-  <img src="../assets/Football Design.png" alt="Football Logo">
-</nav>
-</header>
-
-
-  <!-- Main content -->
-  <main>
-  <head>
-  <meta charset="UTF-8">
-  <title>Website Example</title>
   <style>
+
+    .social {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+    .social img {
+     width: 24px;
+     height: 24px;
+}
+
+    .social-right {
+     position: absolute;
+     right: 20px;
+    bottom: 10px;
+}
+
+    .center-title .title-image {
+      width: 40px;          /* adjust size */
+      height: auto;         /* keep proportions */
+      vertical-align: middle;
+      margin-right: 10px;   /* space between image and text */
+    }
+    .center-title h1 {
+      display: inline-block; /* allow side-by-side with image */
+      font-size: 32px;
+      margin: 0;
+      color: black;
+    }
+
+        /* Title + subtitle positioned between rectangles */
+    .center-title {
+      position: absolute;
+      background-color: rgb(220, 255, 220);
+      opacity: 70%;
+      top: 76px;              /* halfway between top and bottom rectangles */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 600px;            /* control width */
+    }
+
+    .center-title h1 {
+      font-size: 32px;
+      margin: 0;
+      color: black;
+    }
+
+    .center-title h2 {
+      font-size: 22px;
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+
     .rounded-rectangle {
-    display: flex;
-    margin-top: 30px;       /* places it in the upper left */
-    width: 250px;             /* rectangle width */
-    padding: 15px;            /* inner spacing */
-    background-color: #f0f0f0;/* light gray background */
-    border-radius: 15px;      /* rounded corners */
-    border: 2px solid #333;   /* border color */
-    font-family: Arial, sans-serif;
-    color: black;             /* <-- force text to black */
-  }
-  .rounded-rectangle h2 {
-    margin: 0;
-    font-size: 18px;
-    text-align: center;
-  }
+      position: absolute;       /* places it in the upper left */
+      top: 150px;                /* distance from the top */
+      left: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle2 {
+      position: absolute;       /* places it in the upper left */
+      top: 450px;                /* distance from the top */
+      left: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle2 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle3 {
+      position: absolute;       /* places it in the upper left */
+      top: 150px;                /* distance from the top */
+      right:60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle3 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .rounded-rectangle4 {
+      position: absolute;       /* places it in the upper left */
+      top: 450px;                /* distance from the top */
+      right: 60px;               /* distance from the left */
+      width: 350px;             /* rectangle width */
+      padding: 15px;            /* inner spacing */
+      background-color: #f0f0f0;/* light gray background */
+      border-radius: 15px;      /* rounded corners */
+      border: 2px solid #333;   /* border color */
+      font-family: Arial, sans-serif;
+    }
+    .rounded-rectangle4 h2 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
 
-  .rounded-rectangle2 {
-    display: flex;
-    width: 250px;
-    padding: 15px;
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    border: 2px solid #333;
-    font-family: Arial, sans-serif;
-    color: black;             /* <-- force text to black */
-  }
-  .rounded-rectangle2 h2 {
-    margin: 0;
-    font-size: 18px;
-    text-align: center;
-  }
+    .grow {
+      height: 30px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border: 1px solid #aaa;
+      padding: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      opacity: 0.4;
+    }
+    .grow:hover {
+      height: auto;
+      white-space: normal;
+      transform: scale(1.1);
+      opacity: 1;
+    }
 
-  .rounded-rectangle3 {
-    display: flex;
-    width: 250px;
-    padding: 15px;
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    border: 2px solid #333;
-    font-family: Arial, sans-serif;
-    color: black;             /* <-- force text to black */
-  }
-  .rounded-rectangle3 h2 {
-    margin: 0;
-    font-size: 18px;
-    text-align: center;
-  }
+    .rounded-rectangle,
+  .rounded-rectangle2,
+  .rounded-rectangle3,
+  .rounded-rectangle4 {
+  overflow-x: hidden;
+}
 
   </style>
 </head>
-<body>
-  <div class="rounded-rectangle">
-    <h2>Purpose of Website</h2>
-    <p>This section explains the main goal of the site.</p>
-  </div>
-  <div class="rounded-rectangle2">
-    <h2>What is Football?</h2>
-    <p>Football is a team sport played on a rectangular field where two sides compete to score goals by advancing the ball into the opponent’s end zone. It combines strategy, skill, and teamwork, making it one of the most popular sports worldwide.</p>
-  </div>
-  <div class="rounded-rectangle3">
-    <h2>How to Get Started?</h2>
-    <p>Football is a team sport played on a rectangular field where two sides compete to score goals by advancing the ball into the opponent’s end zone. It combines strategy, skill, and teamwork, making it one of the most popular sports worldwide.</p>
-  </div>
-</body>
 
-  </main>
+<body style="background-image: url('../assets/soccer history.jpg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             min-height: 900px;
+             height: auto;
+             position: relative;
+             overflow-x: hidden;">
 
+  <!-- Top -->
+  <header>
+    <nav class="nav-left">
+      <a href="index.html">Home</a>
+    </nav>
 
+    <nav class="nav-center">
+      <a href="./public/history.html">History</a>
+      <a href="./public/positions.html">Positions</a>
+      <a href="./public/rules.html">Rules</a>
+      <a href="./public/teams.html">Teams</a>
+      <a href="./public/aboutus.html">About Us</a>
+    </nav>
+
+    <nav class="right-section">
+      <a href="./public/sources.html">Sources</a>
+      <img src="../assets/Football Design.png" alt="Football Logo">
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main style = "background: none !important" class = "formations-main">
+  <div class="center-title">
+    <img src="../assets/boy_kick.png" alt="Football Icon" class="title-image">
+    <h1 style = "color: lightgreen;">Football Made Easy</h1>
+    <img src="../assets/Football Design.png" alt="Football Icon" class="title-image">
+    <h2>A (Thorough) Guide to Football</h2>
+  </div>
+</main>
+
+  <div class="rounded-rectangle grow">
+    <h2>Early Origins of Football</h2>
+    <p>Football traces back to ancient ball games played in the early civilizations such as China. It was called cuju, and it had a round ball stiched leather with fur or feathers inside and it was the first known ball game that involves kicking. </p>
+  </div>
+  <div class="rounded-rectangle2 grow">
+    <h2>How the Rules were Made</h2>
+    <p>In December 1863 the Football Association was founded in London to bring order to the game. The first official Laws of the game were written which banned rough practices like hacking and setting clear rules for play. This is where it marked the beginning of modern football</p>
+  </div>
+  <div class="rounded-rectangle3 grow">
+    <h2>How Football Took Over the World</h2>
+    <p>Football was no longer a random game but a national one. It was spreading fast with clubs popping up across Europe and South America. The game became a global obsession that people played and loved even wherever they are. </p>
+  </div>
+    <div class="rounded-rectangle4 grow">
+    <h2>Football in the Modern era</h2>
+    <p>Today as of December 16, 2025, football is more tha a sport but a worldwide celebration. Superstars like Pele, Maradona, Messi, Ronaldo have inspired millions with their talent. Football unites fans everywhere with passion and excitement</p>
+  </div>
 
   <!-- Footer -->
-  <footer>
+  <footer style = "position: absolute; bottom: 0; width: 100%">
     <div class="social">
       <figure>
         <img src="../assets/facebook-logo.png" alt="Facebook">
@@ -133,3 +238,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
