@@ -69,6 +69,15 @@ main {
   margin: 0;
 }
 
+.page-background {
+    background-image: url('../assets/Football-Background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
 
 footer {
   background-color: rgb(239, 245, 210);
