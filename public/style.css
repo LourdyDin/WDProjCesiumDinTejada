@@ -167,7 +167,6 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  flex: 1; /* THIS is what makes the sticky footer work */
 }
 
 #mainImage {
