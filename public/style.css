@@ -74,11 +74,10 @@ a:hover {
 main {
   flex: 1; /* required for sticky footer */
   background-color: rgb(198, 216, 112);
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  color: white;
-  font-size: 1.5em;
+  align-items: flex-start; 
   padding: 0;
   margin: 0;
 }
@@ -87,7 +86,7 @@ main {
     background-image: url('../assets/Football-Background.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    height:100vh;
     position: relative;
     overflow-x: hidden;
 }
@@ -103,7 +102,7 @@ footer {
   position: relative;
   flex-wrap: wrap;        
   box-sizing: border-box; 
-  width: 100%;            
+  width: 100%;          
   overflow-x: hidden;
 }
 
@@ -113,15 +112,14 @@ footer {
   gap: 10px;
 }
 
-.social img {
-  width: 24px;
-  height: 24px;
+.social-right {
+  display: flex;
+  flex-direction: column;
 }
 
-.social-right {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+.social img, .social-right img {
+  width: 24px;
+  height: 24px;
 }
 
 figure {
@@ -135,10 +133,8 @@ figcaption {
 }
 
 .copyright {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
   font-size: 0.9em;
+  margin-top: 30px;
 }
 
 button {
@@ -165,7 +161,7 @@ button.active {
 }
 
 html, body {
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -194,6 +190,27 @@ body {
   opacity: 1;
 }
 
+.hero {
+  background-image: url('../assets/Football-Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  justify-content: space-between;
+  background-color: rgb(198, 216, 112);
+}
+
 /* index and history */
 .center-title .title-image {
       width: 40px;          /* adjust size */
@@ -210,14 +227,14 @@ body {
 
         /* Title + subtitle positioned between rectangles */
     .center-title {
-      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background-color: rgb(220, 255, 220);
       opacity: 70%;
-      top: 76px;              /* halfway between top and bottom rectangles */
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      width: 600px;            /* control width */
+      width: 100%;
+                 /* control width */
     }
 
     .center-title h1 {
@@ -234,9 +251,7 @@ body {
     }
 
     .rounded-rectangle {
-      position: absolute;       /* places it in the upper left */
-      top: 150px;                /* distance from the top */
-      left: 60px;               /* distance from the left */
+      display: flex;               /* distance from the left */
       width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
@@ -250,9 +265,7 @@ body {
       text-align: center;
     }
     .rounded-rectangle2 {
-      position: absolute;       /* places it in the upper left */
-      top: 450px;                /* distance from the top */
-      left: 60px;               /* distance from the left */
+      display: flex;               /* distance from the left */
       width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
@@ -266,9 +279,7 @@ body {
       text-align: center;
     }
     .rounded-rectangle3 {
-      position: absolute;       /* places it in the upper left */
-      top: 150px;                /* distance from the top */
-      right:60px;               /* distance from the left */
+      display: flex;               /* distance from the left */
       width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
@@ -282,9 +293,7 @@ body {
       text-align: center;
     }
     .rounded-rectangle4 {
-      position: absolute;       /* places it in the upper left */
-      top: 450px;                /* distance from the top */
-      right: 60px;               /* distance from the left */
+      display: flex;               /* distance from the left */
       width: 350px;             /* rectangle width */
       padding: 15px;            /* inner spacing */
       background-color: #f0f0f0;/* light gray background */
@@ -299,28 +308,34 @@ body {
     }
 
     .grow {
-      height: 30px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      border: 1px solid #aaa;
-      padding: 5px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      opacity: 0.4;
+      max-height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    opacity: 0.4;
+
     }
     .grow:hover {
-      height: auto;
+      max-height: 500px;
       white-space: normal;
       transform: scale(1.1);
       opacity: 1;
     }
 
+    .grow p {
+  display: none;
+}
+
+.grow:hover p {
+  display: block;
+}
+
     .rounded-rectangle,
   .rounded-rectangle2,
   .rounded-rectangle3,
   .rounded-rectangle4 {
-  overflow-x: hidden;
+  flex-direction: column;   /* stack h2 and p vertically */
+  align-items: center;      /* center h2 horizontally */
 }
 
 /* teams and about us */
@@ -366,3 +381,43 @@ body {
       transform: scale(1.1);
       opacity: 1;
     }
+
+    .four-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: auto auto;   /* 2 rows */
+  width: 100%;
+  height: 85%;
+  padding: 40px 40px 0 40px;
+  gap: 40px;
+}
+
+.four-grid > div {
+  align-self: start;
+  justify-self: start;
+}
+
+/* Top-left */
+.four-grid > div:nth-child(1) {
+  justify-self: start;
+  align-self: start;
+}
+
+/* Top-right */
+.four-grid > div:nth-child(2) {
+  justify-self: end;
+  align-self: start;
+}
+
+/* Bottom-left */
+.four-grid > div:nth-child(3) {
+  justify-self: start;
+  align-self: end;
+}
+
+/* Bottom-right */
+.four-grid > div:nth-child(4) {
+  justify-self: end;
+  align-self: end;
+}
+
