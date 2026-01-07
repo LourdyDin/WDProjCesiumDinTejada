@@ -93,7 +93,7 @@ main {
 
 
 footer {
-  background-color: rgb(239, 245, 210);
+  background-color: #eff5d2;
   opacity: 70%;
   display: flex;
   justify-content: space-between;
@@ -208,7 +208,7 @@ body {
   gap: 40px;
   padding: 40px;
   justify-content: space-between;
-  background-color: rgb(198, 216, 112);
+  background-color: #c6d870;
 }
 
 /* index and history */
@@ -231,7 +231,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgb(220, 255, 220);
+      background-color: #dcffdc;
       opacity: 70%;
       width: 100%;
                  /* control width */
