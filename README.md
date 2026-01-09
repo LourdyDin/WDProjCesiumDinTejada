@@ -27,6 +27,8 @@
 
 ## JS Implementation: Javascript will be implemented on the positions page as hovering your cursor over any of the football position will result in a pop-up that gives the positions name and a description of what it does.
 
+## HTML Form Implementation:  When the user goes to the introduction and history they can access everything that is included in there but when they go to any other page it will be locked and if they click on the logo on the top right(or on the page that it says to sign up) they will be asked to either sign up or login. The reason why we have this is so that the user can be able to give comments like a free wall that is open for discussions.
+
 ## WireFrame: The link below will show the wireframe
 
 [View WireFrame](https://www.canva.com/design/DAG3JS9YjUk/QJS5RCpke-uu9xRRpOGCAw/edit?utm_content=DAG3JS9YjUk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
