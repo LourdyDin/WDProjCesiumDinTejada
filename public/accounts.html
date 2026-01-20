@@ -8,7 +8,6 @@
   <link rel="icon" type="image/png" href="../assets/Football Design.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class = "page-background" style = "background-image: url('../assets/Football-teams.jpg')">
   
   <!-- Top -->
   <header>
@@ -91,6 +90,76 @@
     </div>
   </footer>
 
+
+  <section>
+    <form id="dForm" action="registered.html" method="get">
+      <fieldset>
+        <label> Student ID: 
+          <input onblur = "BlurFunction" type="number" name="sid" id="sid" required />
+        </label><br/><br/>
+        <label> Full Name: 
+          <input onblur = "BlurFunction" type="text" name="uname" id="uname" required />
+        </label><br/><br/>
+        <label> Birthday:
+          <input  onblur = "BlurFunction" type="date" name="dob" id="dob" />
+        </label><br/><br/>
+        <label> Email address:
+          <input onblur = "BlurFunction" type="email" name="em" id="em" required />
+        </label><br/><br/>
+      </fieldset>  
+      <fieldset>
+          <form id="dForm" action="registered.html" method="get">
+            <fieldset>
+              <label> Mobile Phone: 
+                <input onblur = "BlurFunction" type="phone" name="ptype" id="ptype" required />
+              </label><br/><br/>
+              <label> gradeLevel:
+              <select id="gradeLevel" name="gradeLevel" required>
+                  <option value="">-- Select your Grade Level --</option> <!-- Placeholder -->
+                  <option value="7">Grade 7</option>
+                  <option value="8">Grade 8</option>
+                  <option value="9">Grade 9</option>
+                  <option value="10">Grade 10</option>
+                  <option value="11">Grade 11</option>
+                  <option value="12">Grade 12</option>
+              </select>
+              </label><br/><br/>
+              <body>
+                  <p>Intern or Extern</p>
+                  <div>
+                  <input type="radio" id="in" name="Intern" value="Intern">
+                  <label for="Intern">Intern</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="ex" name="Intern" value="Extern">
+                      <label for="Extern">Extern</label>
+                  </div>
+                  </body>
+              </label><br/><br/>
+              <label> Preferred Organization / Club:
+                  <select id="cb" name="Club" required>
+                      <option value="">-- Select your preferred Organization / Club --</option> <!-- Placeholder -->
+                      <option value="Polvere">Polvere</option>
+                      <option value="Alianti">Alianti</option>
+                      <option value="Computron">Computron</option>
+                      <option value="Tomorrow">Tomorrow</option>
+                      <option value="Sagala">Sagala</option>
+                      <option value="Volant">Volant</option>
+                  </select>
+                  </label><br/><br/>
+                  <label> Why Do You Want To Join? : 
+                      <textarea name="Join" id="jn">
+                        
+                      </textarea>
+                    </label><br/><br/>
+            </fieldset>  
+        <legend>Action Buttons</legend>
+        <button type="submit"> Accept </button>
+        <input type="reset" value=" Clear " />
+      </fieldset> 
+    </form>
+  </section>
+  
   <script src="script.js"></script>
 </body>
 </html>
