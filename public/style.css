@@ -211,6 +211,16 @@ body {
   background-color: rgb(198, 216, 112);
 }
 
+.sign-up-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  width: 20%;
+  justify-content: center;
+  background-color: rgb(198, 216, 112);
+}
+
 /* index and history */
 .center-title .title-image {
       width: 40px;          /* adjust size */
