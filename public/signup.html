@@ -31,21 +31,31 @@
 
   <!-- Main content -->
   <main>
-    <section class="about-us-section" style = " display: flex;
-      justify-content: flex-start;
-      align-items: center;">
-    <div class="boxacc">
-      <h2><a href="signup.html">Sign Up!</a></h2>
-    </div>
-
-    <div class="boxacc2">
-      <h2> “An immersive and comprehensive guide
-with just a few clicks of a button” </h2>
-</div>
-
-    <div class="boxacc3">
-      <h2><a href="signin.html">Sign In!</a></h2>
-    </div>
+    <section>
+      <h1>Sign-up Page</h1>
+      <form id="dForm" action="registered.html" method="get"
+        >
+        <fieldset>
+          <legend>Sign Up</legend><br/>
+          <label> Username: 
+            <input  onfocus="changeColor(this)" onblur="resetColor(this)" type="text" name="uname" id="uname" required />
+          </label><br/><br/>
+          <label> Password :
+            <input onfocus="changeColor(this)"  onblur="resetColor(this)" type="password" name="pword" id="pword" required />
+          </label><br/><br/>
+          <label> Gender :
+            <input type="radio" name="gender" value="Female" /> Female
+            <input type="radio" name="gender" value="Male" /> Male
+            <input type="radio" name="gender" value="Not Say" /> Prefer Not to Say
+          </label><br/><br/>
+        </fieldset>  
+        <fieldset>
+          <legend>Action Buttons</legend>
+          <button type="submit"> Accept </button>
+          <input type="reset" value=" Clear " />
+        </fieldset> 
+      </form>
+    </section>
   </main>
 
   <!-- Footer -->

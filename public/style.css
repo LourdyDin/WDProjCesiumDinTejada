@@ -431,3 +431,28 @@ body {
   align-self: end;
 }
 
+
+/* accounts */
+.about-us-section {
+  display: flex;
+  justify-content: space-between; /* spreads boxes left, center, right */
+  align-items: center;
+  margin: 20px;
+}
+
+.boxacc, .boxacc2, .boxacc3 {
+  flex: 1; /* base equal width */
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+/* Make Box 2 bigger */
+.boxacc2 {
+  flex: 2; /* takes double the width compared to others */
+  padding: 40px; /* more vertical + horizontal space */
+  font-size: 1.2em; /* slightly larger text */
+}
