@@ -33,15 +33,14 @@
   <main>
     <section>
       <h1>Sign-up Page</h1>
-      <form id="dForm" action="registered.html" method="get"
-        >
+      <form id="dForm">
         <fieldset>
           <legend>Sign Up</legend><br/>
           <label> Username: 
-            <input  onfocus="changeColor(this)" onblur="resetColor(this)" type="text" name="uname" id="uname" required />
+            <input type="text" name="uname" id="uname" required />
           </label><br/><br/>
           <label> Password :
-            <input onfocus="changeColor(this)"  onblur="resetColor(this)" type="password" name="pword" id="pword" required />
+            <input type="password" name="pword" id="pword" required />
           </label><br/><br/>
           <label> Gender :
             <input type="radio" name="gender" value="Female" /> Female
@@ -51,7 +50,7 @@
         </fieldset>  
         <fieldset>
           <legend>Action Buttons</legend>
-          <button type="submit"> Accept </button>
+          <input id="special-button" type="submit" value="Submit">
           <input type="reset" value=" Clear " />
         </fieldset> 
       </form>

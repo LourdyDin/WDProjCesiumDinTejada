@@ -23,38 +23,31 @@
 
     });
   });
-  // read from the localStorage saved as a string - to see if there are anything saved on the users coomputer
-let acctString = localStorage.getItem("accounts")
-if (!acctString) { accountList = {} } // initialize the variable to contain the list of accounts object
-else accountList = JSON.parse(acctString) // converts string into the correct data type in this case object
+  const form = document.getElementById("dForm");
+if (form)
+{
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // stop redirect
 
-const form = document.getElementById("dForm"); // get the HTML form from q3ge2Mendoza.html
+  if (confirm("Sure You Want To Save Your Work?")) {
+    const data = new FormData(form);
+    const obj = Object.fromEntries(data.entries());
 
-// event handler on the submit button instead of onsubmit on the button itself
-form.addEventListener("submit", function(e) { // assign an event handler of submit to the form
-    //e.preventDefault(); // prevent page reload because forms gets submitted
+    // Load existing accounts (array of objects)
+    let accounts = JSON.parse(localStorage.getItem("accounts")) || [];
 
-    if (confirm("Sure You Want To Save Your Work?")) {   
-        // use a predefined class to create an object of data
-        const data = new FormData(form);
+    // Add new account
+    accounts.push(obj);
 
-        // Convert to object
-        const obj = Object.fromEntries(data.entries()); // get all the data from the form
-        // place the object inside the accountList
-        // accountList is an object containing other objects with username as the key
-        accountList[obj.uname] = {};
-        for (let key in obj) { // go through the properties of the object and create another account
-            if (key != "uname") { 
-                accountList[obj.uname][key] = obj[key];
-            }
-        }
-        
-        console.log(accountList) // to check all the account information if it will be saved correctly
-        acctString = JSON.stringify(accountList) // convert object into string, as a requirement of localStorage
-        localStorage.setItem("accounts", acctString) // save on the user's computer
-        form.submit();
-    }
-  });
+    // Save back to localStorage
+    localStorage.setItem("accounts", JSON.stringify(accounts));
+
+    console.log("Saved accounts:", accounts); // check in console
+    alert("Account saved!");
+    form.reset();
+  }
+});
+
 
 // event handler for the reset button instead of onreset on the button itself
 form.addEventListener("reset", function(e) { // 
@@ -64,7 +57,32 @@ form.addEventListener("reset", function(e) { //
   }
 });
 
-// called when user is on the input field
-function BlurFunction() {
-  document.getElementById("myInput").style.backgroundColor = "";
+const inputs = form.querySelectorAll("input, textarea, select");
+
+inputs.forEach(input => {
+  input.addEventListener("blur", function(e) {
+    if (input.value.trim() === "") {
+      // Look for an existing span with class "required" next to the input
+      let span = input.parentElement.querySelector(".required");
+
+      // If none exists, create one
+      if (!span) {
+        span = document.createElement("span");
+        span.className = "required";
+        input.parentElement.appendChild(span);
+      }
+
+      // Show the asterisk
+      span.textContent = " *";
+      span.style.color = "red";
+      span.style.fontWeight = "bold";
+    } else {
+      // If the field is filled, remove the asterisk
+      const span = input.parentElement.querySelector(".required");
+      if (span) {
+        span.textContent = "";
+      }
+    }
+  });
+});
 }
