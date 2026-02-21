@@ -82,6 +82,22 @@ main {
   margin: 0;
 }
 
+.main-accounts {
+  flex: 1; /* required for sticky footer */
+  background: 
+  linear-gradient(rgba(198, 216, 112, 0.6), rgba(198, 216, 112, 0.6)), 
+  url('../assets/Football-Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 0;
+  margin: 0;
+}
+
 .page-background {
     background-image: url('../assets/Football-Background.jpg'); 
     background-size: cover;
@@ -137,7 +153,7 @@ figcaption {
   margin-top: 30px;
 }
 
-button {
+.formation-button {
   background: none;
   border: none;
   white-space: nowrap;
@@ -149,13 +165,13 @@ button {
   width: 240px
 }
 
-button:hover {
+.formation-button:hover {
   text-decoration: underline;
   font-size: 40px;
   color: rgb(0, 211, 0)
 }
 
-button.active {
+.formation-button.active {
   color: rgb(0, 211, 0);
   font-size: 40px;
 }
@@ -406,3 +422,4 @@ body {
   padding: 40px; /* more vertical + horizontal space */
   font-size: 1.2em; /* slightly larger text */
 }
+
