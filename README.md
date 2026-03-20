@@ -43,6 +43,6 @@
 
 ### Read: The website displays stored login information when users log in and shows all comments on the forums.
 
-### Update: A new feature will be added for users to update their saved login information if they forgot their passwords. This will be in the login page and if you click "can't remember password?" users can change their passwords by placing their username/email. They will then be given a randomly generated code to be inputted. If the code inputted is right, they will be granted permission to change the password of the account that is linked to the username entered.
+### Update: A new feature will be added for users to update their saved login information if they forgot their passwords. This will be in the login page and if you click "can't remember password?" users can change their passwords by placing their username/email. They will then be given a randomly generated code to be inputted. If the code inputted is right, they will be granted permission to change the password of the account that is linked to the username entered. The new password inputted will replace the old stored password in localStorage
   
 ### Delete: Users now have the ability to delete their comments from the forums. When clicked, a delete button will be right below it and if the user clicks "delete comment"  it will be removed from the visible page and from the local storage.
