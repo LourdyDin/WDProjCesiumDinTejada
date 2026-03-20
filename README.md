@@ -33,3 +33,16 @@
 
 [View WireFrame](https://www.canva.com/design/DAG3JS9YjUk/QJS5RCpke-uu9xRRpOGCAw/edit?utm_content=DAG3JS9YjUk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+
+
+# FINAL MODIFICATION PROPOSAL
+
+## CRUD Implementation:
+
+### Create: We made it so that users can create accounts (login info) and post comments in the forums.
+
+### Read: The website displays stored login information when users log in and shows all comments on the discussion wall.
+
+### Update: A new feature will be added for users to update their saved login information if they forgot their passwords. This will be in the login page and if you click "can't remember password?" users can change their passwords by placing their username/email. They will then be given a randomly generated code to be inputted. If the code inputted is right, they will be granted permission to change the password of the account that is linked to the username entered.
+  
+### Delete: Users now have the ability to delete their comments from the forums. When clicked, a delete button will be right below it and if the user clicks "delete comment"  it will be removed from the visible page and from the local storage.
