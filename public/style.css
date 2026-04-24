@@ -423,3 +423,118 @@ body {
   font-size: 1.2em; /* slightly larger text */
 }
 
+/* Container for the whole form */
+.signform {
+  width: 25vw;
+  min-height: 45vh;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.6);   /* black with 60% opacity */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  color: #fff;                      /* white text for contrast */
+}
+
+/* Fieldset styling */
+.signform fieldset {
+  border: none;              /* remove default border */
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+/* Legend styling */
+.signform legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #078f29;
+  margin-bottom: 10px;
+}
+
+/* Labels and inputs */
+.signform label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.signform input[type="text"],
+.signform input[type="password"] {
+  background: rgba(255, 255, 255, 0.9); /* light translucent input background */
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  width: 60%;  
+  margin-bottom: 15px;
+}
+
+.signform input:focus {
+  outline: none;
+  border: 2px solid #078f29;
+}
+
+/* Buttons */
+.signform input[type="submit"],
+.signform input[type="reset"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+
+.signform input[type="submit"] {
+  background: #078f29;
+  color: white;
+}
+
+.signform input[type="submit"]:hover {
+  background: #078f29;
+}
+
+.signform input[type="reset"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.signform input[type="reset"]:hover {
+  background: #c0c0c0;
+}
+
+.forgot-link {
+  display: block;          /* puts it on its own line */
+  text-align: center;      /* centers the text */
+  margin-top: 15px;        /* spacing above */
+  color: #078f29;          /* link color */
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.signheader {
+  color: #078f29;
+  text-align: center;
+}
+
+.altsign {
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: #e74c3c;   /* red tone */
+  color: #fff;                 /* white text */
+  border: none;                /* remove default border */
+  padding: 8px 16px;           /* spacing */
+  border-radius: 5px;          /* rounded corners */
+  cursor: pointer;             /* pointer on hover */
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;   /* darker red on hover */
+}

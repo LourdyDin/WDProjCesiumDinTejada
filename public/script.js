@@ -49,6 +49,13 @@ if (form) {
       const obj = Object.fromEntries(data.entries());
 
       let accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+
+       let existingUser = accounts.find(acc => acc.uname === obj.uname);
+      if (existingUser) {
+        alert("That username is already taken. Please choose another.");
+        return; // stop here, don’t save duplicate
+      }
+      
       accounts.push(obj);
       localStorage.setItem("accounts", JSON.stringify(accounts));
 
@@ -117,7 +124,7 @@ if (authControls) {
 
   if (currentUser) {
     // Show logout button
-    authControls.innerHTML = `<button id="logoutBtn">Logout</button>`;
+    authControls.innerHTML = `<button id="logoutBtn" class="logout-btn">Logout</button>`;
 
     const logoutBtn = document.getElementById("logoutBtn");
     logoutBtn.addEventListener("click", () => {
@@ -140,8 +147,44 @@ protectedLinks.forEach(link => {
 
     if (!currentUser) {
       e.preventDefault(); // stop navigation
+      alert("You must log in to access this page.")
       window.location.href = getRedirectPath("accounts.html"); // redirect to signup page
     }
   });
 });
 
+const forgotForm = document.getElementById("forgotForm");
+if (forgotForm) {
+  const resetCode = Math.floor(100000 + Math.random() * 900000).toString();
+  alert("Your reset code is: " + resetCode);
+
+  forgotForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = new FormData(forgotForm);
+    const obj = Object.fromEntries(data.entries());
+
+    let accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+    let user = accounts.find(acc => acc.uname === obj.uname);
+
+    if (!user) {
+      alert("No account found with that username.");
+      return;
+    }
+
+    // Step 1: Check verification code
+    if (obj.code === resetCode) { // example hardcoded code
+      // Step 2: Allow password change
+      if (obj.newPassword && obj.newPassword === obj.confirmPassword) {
+        user.pword = obj.newPassword; // update password
+        localStorage.setItem("accounts", JSON.stringify(accounts));
+        alert("Password successfully changed!");
+        window.location.href = "signin.html";
+      } else {
+        alert("Passwords do not match.");
+      }
+    } else {
+      alert("Incorrect verification code.");
+    }
+  });
+}
